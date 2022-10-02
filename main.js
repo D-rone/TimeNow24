@@ -28,6 +28,9 @@ let diff = async () => {
 };
 
 let updateTime = async (TO) => {
+  if (noErr) {
+    timeObject += 1000;
+  }
   TO += 1000;
   let date = new Date(TO);
   let hours = date.getHours();
